@@ -1,0 +1,154 @@
+/*subheader*/
+
+.subheader{
+    width: 100%;
+    height: 261px;
+    overflow: hidden;
+    background: url("../img/subheaderImg.png") no-repeat left;
+    background-size: cover;
+}
+
+/*content*/
+
+.main{
+    width: 100%;
+}
+.title{
+    width: 100%;
+    height: 126px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h1{
+    font: 700 32px/39px Montserrat;
+    color: white;
+}
+.submain2{
+    width: 100%;
+    min-height: 831px;
+    display: flex;
+    align-content: center;
+}
+.submain2_content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 19vh 5%;
+    flex-wrap: wrap;
+    gap: 145px;
+}
+.submain2_content a{
+    width: 264px;
+    /*height: 48vh;*/
+    height: 504px;
+    text-decoration: none;
+}
+.category-picture{
+    width: 100%;
+    height: 365px;
+}
+.category-first{
+    background: url("../img/BSexmp1.jpg") bottom no-repeat;
+    background-size: cover;
+}
+.category-second{
+    background: url("../img/BSexmp2.jpg") bottom no-repeat;
+    background-size: 160%;
+}
+.category-third{
+    background: url("../img/BSexmp3.jpg") bottom no-repeat;
+    background-size: cover;
+}
+.category:hover .category-first{
+    background-position: top;
+    transition: 4s;
+}
+.category-first:not(:hover){
+    transition: 2s;
+}
+.category:hover .category-second{
+    background-position: top;
+    transition: 4s;
+}
+.category-second:not(:hover){
+    transition: 2s;
+}
+.category:hover .category-third{
+    background-position: top;
+    transition: 4s;
+}
+.category-third:not(:hover){
+    transition: 2s;
+}
+.category-name{
+    width: 100%;
+    height: 139px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.category-name p{
+    font: 700 16px/19px Montserrat;
+    color: black;
+    text-align: center;
+    margin: 10px;
+}
+.category:hover .category-name{
+    background: black;
+    transition: 1s;
+}
+.category:not(:hover) .category-name{
+    transition: 1s;
+}
+.category:hover p{
+    color: white;
+    transition: 1s;
+}
+.category:not(:hover) p{
+    transition: 1s;
+}
+@media (max-width: 800px){
+    .subheader{
+        height: 29vh;
+    }
+    .title{
+        height: 14vh;
+    }
+    .title h1{
+        font: 700 28px/35px Montserrat;
+    }
+    .submain2_content a{
+        width: 36vw;
+        height: 56vh;
+    }
+    .category-picture{
+        width: 100%;
+        height: 35vh;
+    }
+    .category-name{
+        width: 100%;
+        height: 21vh;
+    }
+    .category-name p{
+        font: 700 12px/15px Montserrat;
+    }
+}
+@media (max-width: 480px){
+    .title h1{
+        font: 700 18px/25px Montserrat;
+    }
+    .submain2_content a{
+        width: 36vw;
+        height: 56vh;
+        border: 1px solid grey;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .category-name p{
+        font: 700 2vw/13px Montserrat;
+    }
+}

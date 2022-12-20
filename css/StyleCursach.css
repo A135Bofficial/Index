@@ -1,0 +1,335 @@
+.submain1{
+    width: 100%;
+    height: 855px;
+    display: flex;
+    background: url("../img/mainImg.png") no-repeat right;
+    background-size: cover;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    max-width: 800px;
+    position: absolute;
+    height: inherit;
+    align-content: center;
+    margin-left: 15%;
+}
+.title span{
+    font: 400 48px/59px Montserrat;
+    color: white;
+    margin-top: 10px;
+}
+.title span:first-of-type{
+    font: 400 64px/78px Grape Nuts;
+    color: white;
+    margin: 0px 15px 0px 0px;
+}
+.title .subtitle{
+    font-size: 27px;
+    color: white;
+}
+.submain2{
+    width: 100%;
+    min-height: 831px;
+    display: flex;
+    align-content: center;
+}
+.submain2_content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 172px 5%;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+.submain2_content a{
+    width: 383px;
+    /*height: 48vh;*/
+    height: 430px;
+    text-decoration: none;
+}
+.category{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.category_electric{
+    background: url("../img/Electric2.png") top;
+    background-size: cover;
+}
+.category_acoustic{
+    background: url("../img/Acoustic.jpg") top;
+    background-size: cover;
+}
+.category_bass{
+    background: url("../img/Bass.jpg") top no-repeat;
+    background-size: 130%;
+}
+.category_electric:hover{
+    background-position: center;
+    transition: 2s;
+}
+.category_electric:not(:hover){
+    transition: 2s;
+}
+.category_acoustic:hover{
+    background-position: center;
+    transition: 3s;
+}
+.category_acoustic:not(:hover){
+    transition: 2s;
+}
+.category_bass:hover{
+    background-position: bottom;
+    transition: 2s;
+}
+.category_bass:not(:hover){
+    transition: 2s;
+}
+.category_name{
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    display: flex;
+    align-self: end;
+    justify-content: center;
+    align-items: center;
+}
+.category_name p{
+    font: 700 24px/29px Montserrat;
+    color: white;
+}
+.category:hover .category_name{
+    background: white;
+    transition: 1s;
+}
+.category:not(:hover) .category_name{
+    transition: 1s;
+}
+.category:hover p{
+    color: black;
+    transition: 1s;
+}
+.category:not(:hover) p{
+    transition: 1s;
+}
+.submain3{
+    width: 100%;
+    padding-bottom: 32vh;
+}
+.submain3_head{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.submain3_name{
+    width: 70%;
+    height: 100%;
+    background: rgba(2, 18, 100, 65%);
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 45px;
+}
+.submain3_name h1{
+    font: 1000 48px/59px Montserrat;
+    color: white;
+    margin: 0px;
+    padding-left: 230px;
+}
+.submain3_button{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submain3_button button{
+    border: solid black 3px;
+    background: transparent;
+    border-radius: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+.submain3_button button:hover{
+    cursor: pointer;
+    border-radius: 40px;
+    transition: .5s;
+}
+.submain3_button button:not(:hover){
+    transition: .5s;
+}
+.submain3_button p{
+    margin: 5px 50px;
+    font: 900 29px/35px Montserrat;
+    color: black;
+}
+.submain3_button button:hover p{
+    cursor: pointer;
+    margin: 13px 70px;
+    font: 900 33px/35px Montserrat;
+    transition: 2s;
+}
+.submain3_button button:not(:hover) p{
+    transition: 2s;
+}
+.submain3_content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+.submain3_item{
+    width: 74%;
+    min-height: 417px;
+    border: solid black 1px;
+    display: flex;
+    margin-top: 3%;
+    align-items: center;
+}
+.submain3_picture{
+    height: 417px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.first{
+    background: url("../img/News1.jpg") center no-repeat;
+    background-size: cover;
+}
+.second{
+    background: url("../img/News2.jpg") center no-repeat;
+    background-size: 110%;
+}
+.item_content{
+    padding: 83px 40px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.item_content h2{
+    font: 900 20px/24px Montserrat;
+    color: black;
+}
+.item_content p{
+    font: 700 16px/19px Montserrat;
+    color: #000000;
+}
+@media (max-width: 800px){
+    .submain1{
+        height: 100vh;
+    }
+    .title span{
+        background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 0 1.25vw 1.25vw rgba(0, 0, 0, 0.7);
+        border-radius: 1.25vw;
+        font-size: 38px;
+        margin-top: 1.25vw;
+    }
+    .title span:first-of-type{
+        font-size: 54px;
+        margin: 0px 1.9vw 0px 0px;
+    }
+    .title .subtitle{
+        font-size: 17px;
+    }
+    .submain2{
+        min-height: 731px;
+    }
+    .submain2_content a{
+        width: 48vw;
+        max-height: 430px;
+        min-height: 120px;
+        height: 48vh;
+    }
+    .submain3_head{
+        flex-direction: column;
+        height: 40vh;
+        justify-content: space-around;
+    }
+    .submain3_name{
+        max-height: 59px;
+        justify-content: center;
+    }
+    .submain3_button{
+        align-self: center;
+    }
+    .submain3_name h1{
+        font-size: 6vw;
+        padding-left: 0px;
+    }
+    .submain3_button button{
+        border: solid black 2px;
+    }
+    .submain3_button p{
+        margin: 0.6vw 6vw;
+        font-size: 3vw;
+    }
+    .submain3_button button:hover p{
+        margin: 0.6vw 8vw;
+        font-size: 3vw;
+    }
+    .submain3_item{
+        flex-direction: column;
+    }
+    .item_content{
+        padding: 63px 40px;
+    }
+    .submain3_picture{
+        height: 46vh;
+        min-height: 166px;
+        width: 80%;
+    }
+    .item_content h2{
+        font: 900 15px/14px Montserrat;
+    }
+    .item_content p{
+        font: 700 11px/13px Montserrat;
+    }
+}
+@media (max-width: 480px){
+    .title span{
+        font-size: 28px;
+        line-height: 49px;
+    }
+    .title span:first-of-type{
+        font-size: 44px;
+        line-height: 68px;
+    }
+    .title .subtitle{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .submain2_content{
+        padding: 25vh 5vw;
+    }
+    .category_name{
+        height: 15vh;
+        max-height: 75px;
+    }
+    .category_name p{
+        font: 700 5vw/29px Montserrat;
+    }
+    .category_bass{
+        background-size: cover;
+    }
+    .submain3_head{
+        max-height: 170px;
+    }
+    .item_content{
+        padding: 9vh 20px;
+    }
+    .item_content h2{
+        font: 900 10px/10px Montserrat;
+    }
+    .item_content p{
+        font: 700 8px/8px Montserrat;
+    }
+}

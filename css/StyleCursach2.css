@@ -1,0 +1,155 @@
+/*subheader*/
+
+.subheader{
+    width: 100%;
+    height: 261px;
+    background: url("../img/subheaderImg.png") no-repeat left;
+    background-size: cover;
+}
+
+/*content*/
+
+.main{
+    width: 100%;
+}
+.title{
+    width: 100%;
+    height: 126px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h1{
+    font: 700 32px/39px Montserrat;
+    color: white;
+}
+.submain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 215px;
+}
+.submain_content{
+    width: 64%;
+}
+.paje-name{
+    margin: 80px 0px 66px;
+}
+.paje-name h2{
+    font: 900 24px/29px Montserrat;
+    color: black;
+}
+.paje-name p{
+    font: 600 16px/19px Montserrat;
+    color: black;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+label{
+    font: 600 16px/19px Montserrat;
+    color: black;
+}
+input{
+    max-width: 483px;
+    height: 44px;
+    flex-shrink: 1;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+textarea{
+    max-width: 846px;
+    min-height: 126px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+.button-submit{
+    width: 170px;
+    height: 62px;
+    background: rgba(2, 0, 107, 1);
+    border-radius: 10px;
+    font: 700 20px/24px Montserrat;
+    color: white;
+    border: 2px solid transparent;
+}
+.button-submit:hover{
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(2, 0, 107, 1);
+    color: black;
+    transition: 0.5s;
+}
+.button-submit:not(:hover){
+    transition: 0.5s;
+}
+@media(max-width: 800px){
+    .subheader{
+        height: 29vh;
+    }
+    .title{
+        height: 14vh;
+    }
+    .title h1{
+        font: 700 28px/35px Montserrat;
+    }
+    .submain{
+        padding-bottom: 23vh;
+    }
+    .paje-name h2{
+        font: 900 19px/24px Montserrat;
+    }
+    .paje-name p{
+        font: 600 11px/14px Montserrat;
+    }
+    .form{
+        gap: 10px;
+    }
+    label{
+        font: 600 12px/15px Montserrat;
+    }
+    input{
+        max-width: 483px;
+        height: 4.8vh;
+    }
+    textarea{
+        min-height: 14vh;
+    }
+    .button-submit{
+        width: 20vw;
+        min-width: 80px;
+        height: 6vh;
+        min-height: 40px;
+        font: 700 15px/19px Montserrat;
+    }
+}
+@media(max-width: 480px){
+    .title h1{
+        font: 700 18px/25px Montserrat;
+    }
+    .paje-name h2{
+        font: 900 16px/21px Montserrat;
+    }
+    .paje-name p{
+        font: 600 10px/13px Montserrat;
+    }
+    .form{
+        gap: 8px;
+    }
+    label{
+        font: 600 10px/13px Montserrat;
+    }
+    input{
+        border: 1px solid #000000;
+    }
+    textarea{
+        border: 1px solid #000000;
+    }
+    .button-submit{
+        font: 700 2.5vw/16px Montserrat;
+        min-width: 30px;
+        min-height: 20px;
+    }
+}

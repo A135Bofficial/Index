@@ -1,0 +1,148 @@
+/*subheader*/
+
+.subheader{
+    width: 100%;
+    height: 261px;
+    overflow: hidden;
+    background: url("../img/subheaderImg.png") no-repeat left;
+    background-size: cover;
+}
+
+/*content*/
+
+.main{
+    width: 100%;
+}
+.title{
+    width: 100%;
+    height: 126px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h1{
+    font: 700 32px/39px Montserrat;
+    color: white;
+}
+.main_content{
+    padding: 88px 110px 196px;
+    display: flex;
+    justify-self: stretch;
+    justify-content: space-around;
+}
+.photos{
+    width: 464px;
+    height: 595px;
+    display: flex;
+    flex-direction: row;
+}
+.big-picture{
+    width: 50%;
+    height: 595px;
+    background: url("../img/jt-220-bk.jpg") center no-repeat;
+    object-fit: cover;
+}
+.lil-pictures{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    gap: 15px;
+}
+.picture1{
+    width: 100%;
+    height: 142px;
+    background: url("../img/view1.jpg") center no-repeat;
+    background-size: cover;
+}
+.picture2{
+    width: 100%;
+    height: 174px;
+    background: url("../img/view2.jpg") center no-repeat;
+    background-size: cover;
+}
+.picture3{
+    width: 100%;
+    height: 195px;
+    background: url("../img/exmp1.jpg") center no-repeat;
+    background-size: 70%;
+}
+.text{
+    width: 34vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+}
+.text h2{
+    font: 1000 18px/19px Montserrat;
+    color: black;
+}
+.text p{
+    font: 600 16px/19px Montserrat;
+    color: black;
+}
+@media (max-width: 800px){
+    .subheader{
+        height: 29vh;
+    }
+    .title{
+        height: 14vh;
+    }
+    .title h1{
+        font: 700 28px/35px Montserrat;
+    }
+    .main_content{
+        padding: 6vh 14vw 12vh;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .text{
+        width: 58vw;
+    }
+    .text h2{
+        font: 1000 14px/15px Montserrat;
+    }
+    .text p{
+        font: 600 12px/15px Montserrat;
+    }
+}
+@media (max-width: 480px){
+    .title h1{
+        font: 700 18px/25px Montserrat;
+    }
+    .photos{
+        width: 100vw;
+        height: 126vh;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .big-picture{
+        height: 124vh;
+    }
+    .lil-pictures{
+        height: 124vh;
+        max-height: 595px;
+    }
+    .picture1{
+        height: 15vh;
+        height: 142px;
+    }
+    .picture2{
+        height: 15vh;
+        max-height: 174px;
+    }
+    .picture3{
+        height: 21vh;
+        max-height: 195px;
+    }
+    .text h2{
+        font: 1000 12px/13px Montserrat;
+    }
+    .text p{
+        font: 600 10px/13px Montserrat;
+    }
+}
